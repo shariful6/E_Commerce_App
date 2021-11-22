@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+     <LinearLayout
+         android:layout_gravity="center"
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <ImageView
+             android:id="@+id/productImageIv_id"
+             android:scaleType="fitCenter"
+             android:adjustViewBounds="true"
+             android:layout_marginTop="10dp"
+             android:layout_width="match_parent"
+             android:layout_height="100dp"
+             android:src="@drawable/mobile" />
+
+         <TextView
+             android:id="@+id/productNameTv_id"
+             android:text="Mi Note 10"
+             android:textSize="15dp"
+             android:textColor="@color/black"
+             android:layout_width="150dp"
+             android:layout_height="wrap_content"/>
+         <TextView
+             android:id="@+id/productPriceTv_id"
+             android:text="10000 TK"
+             android:textColor="#D32F2F"
+             android:layout_width="150dp"
+             android:textSize="12dp"
+             android:layout_height="wrap_content"/>
+
+     </LinearLayout>
+
+</LinearLayout>

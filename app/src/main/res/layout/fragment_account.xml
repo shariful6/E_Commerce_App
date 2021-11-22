@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AccountFragment">
+
+ <ScrollView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+   <androidx.cardview.widget.CardView
+       android:layout_margin="15dp"
+       app:cardElevation="10dp"
+       app:cardCornerRadius="10dp"
+       app:cardPreventCornerOverlap="false"
+       android:layout_width="match_parent"
+       android:layout_height="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <de.hdodenhof.circleimageview.CircleImageView
+         android:id="@+id/profileIv_id"
+         android:layout_width="80dp"
+         android:layout_height="80dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_centerVertical="true"
+         android:src="@drawable/profile" />
+
+     <TextView
+         android:id="@+id/userNameTv_id"
+         android:layout_toEndOf="@+id/profileIv_id"
+         android:layout_marginTop="20dp"
+         android:text="User Name"
+         android:textSize="20dp"
+         android:textColor="@color/black"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/profileIv_id" />
+     <TextView
+         android:id="@+id/userPhoneTv_id"
+         android:layout_toEndOf="@+id/profileIv_id"
+         android:layout_below="@+id/userNameTv_id"
+         android:layout_centerVertical="true"
+         android:text="01xxxxxxxxx"
+         android:textSize="20dp"
+         android:textColor="@color/black"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@+id/profileIv_id" />
+
+    </RelativeLayout>
+   </androidx.cardview.widget.CardView>
+   <RelativeLayout
+       android:layout_marginLeft="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <TextView
+        android:textSize="15dp"
+        android:textColor="#D81B60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shiping Address" />
+
+    <ImageButton
+        android:id="@+id/editBtn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edit_24" />
+   </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_marginLeft="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name: " />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/tv1"
+        android:text="...................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv1" />
+   </RelativeLayout>
+   <RelativeLayout
+       android:layout_marginLeft="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv2"
+        android:text="Phone: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/tv2"
+        android:text="...................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv2" />
+   </RelativeLayout>
+   <RelativeLayout
+       android:layout_marginLeft="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv3"
+        android:text="Area: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/tv3"
+        android:text="...................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv3" />
+   </RelativeLayout>
+   <RelativeLayout
+       android:layout_marginLeft="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv4"
+        android:text="Thana: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/tv4"
+        android:text="...................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv4" />
+   </RelativeLayout>
+   <RelativeLayout
+       android:layout_marginLeft="15dp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv5"
+        android:text="District: "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@+id/tv5"
+        android:text="...................."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv5" />
+   </RelativeLayout>
+   <RelativeLayout
+       android:id="@+id/myOrderLayout_id"
+       android:layout_marginLeft="15dp"
+       android:layout_marginTop="20dp"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/carIv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/car_shuttle_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/carIv"
+        android:text="My Order" />
+   </RelativeLayout>
+
+
+
+  </LinearLayout>
+ </ScrollView>
+
+</FrameLayout>

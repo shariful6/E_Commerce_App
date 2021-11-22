@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/productIv_row"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/nameTv_row"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:layout_toEndOf="@+id/productIv_row"
+            android:text="Product Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/productIv_row" />
+        <TextView
+            android:id="@+id/brandTv_row"
+            android:textSize="12dp"
+            android:layout_below="@+id/nameTv_row"
+            android:layout_toEndOf="@+id/productIv_row"
+            android:text="Brand Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/productIv_row" />
+
+        <TextView
+            android:id="@+id/priceTv_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/brandTv_row"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@+id/productIv_row"
+            android:layout_toRightOf="@+id/productIv_row"
+            android:text="ট 0"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>
